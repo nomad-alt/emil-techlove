@@ -17,3 +17,8 @@
   color: #666;
   font-size: 1rem;
 }
+
+.repo-card a {
+  color: #0066ff;
+  text-decoration: none;
+}
