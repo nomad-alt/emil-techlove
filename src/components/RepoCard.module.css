@@ -1,24 +1,69 @@
-.repo-card {
-  margin: 2rem auto;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
   padding: 1rem;
-  max-width: 800px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 50%; /* Reduce the width to 50% */
+  background-color: #d4f1f4;
+  background-size: cover;
+  background-position: center;
 }
 
-.repo-card h2 {
-  margin: 0;
-  color: #333;
-  font-size: 1.5rem;
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.repo-card p {
-  color: #666;
-  font-size: 1rem;
+.card h2 {
+  font-size: 1.2rem;
+  color: #05445e;
+  margin-bottom: 0.5rem;
 }
 
-.repo-card a {
-  color: #0066ff;
+.card p {
+  color: #05445e;
+  margin-bottom: 0.5rem;
+  width: 70%;
+}
+
+.card a {
+  color: var(--primary-color);
   text-decoration: none;
+}
+
+.card .stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  margin-right: auto;
+}
+
+.card .stat {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.card .link {
+  display: inline-block;
+  background-color: #75e6da;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 14px;
+}
+
+.card .link:hover {
+  background-color: #189ab4;
 }

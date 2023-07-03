@@ -16,7 +16,6 @@ const App: React.FC = () => {
 
     return (
         <div>
-            <h1>GitHub Repos</h1>
             <RepoList repos={repoData} />
         </div>
     );
