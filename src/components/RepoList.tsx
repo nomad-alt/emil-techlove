@@ -1,6 +1,6 @@
 import React from 'react';
 import { RepoData } from '../api/fetchRepos';
-import styles from './RepoList.module.css';
+import RepoCard from './RepoCard';
 
 interface RepoListProps {
     repos: RepoData[];
@@ -9,12 +9,7 @@ interface RepoListProps {
 const RepoList: React.FC<RepoListProps> = ({ repos }) => {
     return (
         <div>
-            {repos.map((repo: RepoData) => (
-                <div className={styles['repo-card']} key={repo.full_name}>
-                    <h2>{repo.full_name}</h2>
-                    <p>{repo.description}</p>
-                </div>
-            ))}
+            {repos.map((repo: RepoData) => <RepoCard key={repo.full_name} repo={repo} />)}
         </div>
     );
 };
