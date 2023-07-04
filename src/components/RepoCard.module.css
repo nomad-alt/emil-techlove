@@ -12,7 +12,7 @@
   margin: 1rem auto;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   width: 50%; /* Reduce the width to 50% */
-  background-color: #d4f1f4;
+  background-color: #e9eaec;
   background-size: cover;
   background-position: center;
 }
@@ -23,12 +23,12 @@
 
 .card h2 {
   font-size: 1.2rem;
-  color: #05445e;
+  color: #333652;
   margin-bottom: 0.5rem;
 }
 
 .card p {
-  color: #05445e;
+  color: #333652;
   margin-bottom: 0.5rem;
   width: 70%;
 }
@@ -54,7 +54,7 @@
 
 .card .link {
   display: inline-block;
-  background-color: #75e6da;
+  background-color: #90adc6;
   color: #333;
   padding: 0.5rem 1rem;
   border-radius: 4px;
